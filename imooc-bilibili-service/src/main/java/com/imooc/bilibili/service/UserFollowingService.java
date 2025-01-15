@@ -119,6 +119,6 @@ public class UserFollowingService {
         followingGroup.setCreateTime(new Date());
         followingGroup.setType(USER_FOLLOWING_GROUP_TYPE_USER);
         followingGroupService.addFollowingGroup(followingGroup);
-        return
+        return followingGroup.getId();
     }
 }
